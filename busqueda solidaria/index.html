@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Búsqueda Solidaria</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Búsqueda solidaria</h1>
+          <p class="lead">El juego consiste en en ir dando clic en el mapa hasta encontrar el tesoro pérdido en la menor cantidad de clics posibles, mientras aprendes conceptos de consumo responsable y economía solidaria.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <h1>Mapa</h1>
+          <img src="img/treasuremap.png" width="400" height="400" id="map" draggable="false">
+        </div>
+        <div class="col-md-6">
+          <h1>Conceptos</h1>
+          <span id="distance"></span>
+    
+          <script src="js/helper.js" charset="utf-8"></script>
+          <script src="js/game.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="row">
+        <p>Fuente: <a href="https://www.economiasolidaria.org/sites/default/files/3.%20Texto_6%C2%AAsesion_0.pdf">Consumo responsable y Economía solidaria</a></p> 
+      </div>
+    </div>
+
+  </body>
+</html>
