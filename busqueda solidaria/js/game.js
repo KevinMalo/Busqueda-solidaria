@@ -20,7 +20,7 @@ $map.addEventListener('click', function (e) {
   $distance.innerHTML = `${distanceHint}`;
 
   if (distance < 20 ) {
-    alert(`Found the treasure in ${clicks} clicks!`);
+    alert(`Tesoro encontrado en ${clicks} clicks, ahora eres un busca tesoros solidario!`);
     location.reload();
   }
 });
