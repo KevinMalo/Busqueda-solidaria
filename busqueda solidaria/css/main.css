@@ -1,8 +1,19 @@
+html,
+body {
+  height: 100%;
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  cursor: url('../img/alien.webp'), auto;
+}
 
-img {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.top-10 {
+  margin-top: 15px;
 }

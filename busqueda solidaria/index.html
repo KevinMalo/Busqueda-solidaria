@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Búsqueda Solidaria</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  </head>
-  <body>
 
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Búsqueda solidaria</h1>
-          <p class="lead">El juego consiste en en ir dando clic en el mapa hasta encontrar el tesoro pérdido en la menor cantidad de clics posibles, mientras aprendes conceptos de consumo responsable y economía solidaria.</p>
+<head>
+
+  <title>Búsqueda Solidaria</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <div id="page-content">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <h1 class="font-weight-light mt-4 text-white">Búsqueda solidaria</h1>
+          <p class="lead text-white-50">El juego consiste en en ir dando clic en el mapa hasta encontrar el tesoro
+            pérdido en la menor cantidad de clics posibles, mientras aprendes conceptos de consumo responsable y
+            economía solidaria.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+
+
+      <div class="col-md-6">
+
+        <div class="card top-10">
+          <div class="card-header">
+            &#128142; Mapa &#128142;
+          </div>
+          <img class="card-img-top" src="img/treasuremap.png" alt="Mapa para jugar" id="map" draggable="false">
+          <div class="card-body">
+            <h4 class="card-title"><a>Instrucciones</a></h4>
+            <p class="card-text">Busca el tesoro dando clic en el mapa, en la sección de conceptos encontrarás una ayuda
+              para encontrar el tesoro mientras aprendes sobre economía solidaria.</p>
+            <p>Fuente: <a href="https://www.economiasolidaria.org/sites/default/files/3.%20Texto_6%C2%AAsesion_0.pdf"
+                class="Card link">Consumo responsable y Economía solidaria</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card top-10">
+          <div class="card-header">
+            &#128083; Conceptos &#128083;
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <span id="distance"></span>
+            </p>
+            <audio src="./mp3/Evil_Mortys_Theme_ 8_Bit_Universe.mp3" preload="auto" controls autoplay loop>
+              <p>Tu navegador no implementa el elemento audio</p>
+            </audio>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-md-6">
-          <h1>&#128142; Mapa &#128142;</h1>
-          <img src="img/treasuremap.png" width="400" height="400" id="map" draggable="false">
-        </div>
-        <div class="col-md-6">
-          <h1>&#128083; Conceptos &#128083;</h1>
-          <span id="distance"></span>
-    
-          <script src="js/helper.js" charset="utf-8"></script>
-          <script src="js/game.js" charset="utf-8"></script>
-        </div>
-      </div>
-      <div class="row">
-        <p>Fuente: <a href="https://www.economiasolidaria.org/sites/default/files/3.%20Texto_6%C2%AAsesion_0.pdf">Consumo responsable y Economía solidaria</a></p> 
-      </div>
-    </div>
+  </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container justify-content-md-center">
-        <a class="navbar-brand" href="#">
-          <p class="lead">Desarrollado por <strong>Kevin Bueno</strong> &#128154; - Universidad Cooperativa de Colombia - Curso Institucional I</p>
-        </a>
-      </div>
-    </nav>
- 
-  </body>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50 top-10">
+    <div class="container text-center">
+      <small>© 2020 GPL: Desarrollado por <strong>Kevin Bueno</strong> &#128154; - Universidad Cooperativa de Colombia -
+        Curso Institucional I - Música 8 Bit Universe</small>
+    </div>
+  </footer>
+
+</body>
+
 </html>
+
+<script src="js/helper.js" charset="utf-8"></script>
+<script src="js/game.js" charset="utf-8"></script>
